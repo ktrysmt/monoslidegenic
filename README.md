@@ -1,6 +1,5 @@
 # What is this
 
-You just simply create the manuscript by markdown syntax.
 Monoslidegenic is a slide generator just only pass one markdown file.
 
 ## Features
