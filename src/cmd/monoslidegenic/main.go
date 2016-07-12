@@ -1,9 +1,9 @@
 package main
 
 import (
+	"github.com/urfave/cli"
 	"math/rand"
 	"time"
-	"github.com/urfave/cli"
 )
 
 func main() {
@@ -14,10 +14,10 @@ func main() {
 
 	app.Flags = []cli.Flag{
 		cli.StringFlag{
-			Name: "level",
+			Name:  "level",
 			Value: "normal",
 			Usage: "Fortune level, it is hard, easy and normal",
-		}
+		},
 	}
 }
 
