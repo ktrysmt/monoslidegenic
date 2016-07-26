@@ -4,10 +4,10 @@ Monoslidegenic is a slide generator just only pass one markdown file.
 
 ## Features
 
-- Monoslidegenic contains [remarkjs](http://remarkjs.com/).
-- Give a single markdown file to it.
+- Monoslidegenic contains [remarkjs](http://remarkjs.com/) in the standard.
+- You could give a single markdown file to it.
 - It is output the single HTML file only.
-- You can customize CSS and Javascript.
+- Also you can use your customized CSS or Javascript for the file.
 
 For more information, see `monoslidegenic --help`.
 
@@ -19,25 +19,30 @@ Prepare your markdown file. and give it to monoslidegenic.
 And open only it by your browser.  
 
 ```
-$ monoslidegenic ./YOUR_FILENAME.md
+$ monoslidegenic ./YOUR_FILE.md
 $ ls
-YOUR_FILENAME.html
-$ open ./YOUR_FILENAME.html
+YOUR_FILE.html
+$ open ./YOUR_FILE.html
 ```
+Name the slide by yourself, too.
+
+```
+$ monoslidegenic --output awesome-slide.html ./YOUR_FILE.md
+```
+
 ### Customize CSS or Javascript
 
 You can get default using assets by command options.
 
 ```
-$ monoslidegenic --output-css > default.css
-$ monoslidegenic --output-js > default.js
+$ monoslidegenic --css awesome.css --js awesome.js ./YOUR_FILE.md
 ```
 
 ## Installation
 
 Please download from [github release page](https://github.com/ktrysmt/monoslidegenic/releases).
 
-Also you can install by `go get`, too.
+Also you can install via `go get`, too.
 
     $ go get github.com/ktrysmt/monoslidegenic
 
