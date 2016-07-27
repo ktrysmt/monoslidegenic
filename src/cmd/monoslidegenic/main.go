@@ -1,6 +1,7 @@
 package main
 
 import (
+	"fmt"
 	"github.com/urfave/cli"
 	"math/rand"
 	"time"
@@ -19,6 +20,10 @@ func main() {
 			Usage: "Fortune level, it is hard, easy and normal",
 		},
 	}
+
+	fmt.Println("test")
+
+	app.Action = action
 }
 
 func shuffle(arr []string) {
@@ -29,4 +34,22 @@ func shuffle(arr []string) {
 		j := rand.Intn(i + 1)
 		arr[i], arr[j] = arr[j], arr[i]
 	}
+}
+
+func action(c *cli.Context) {
+	fortunes := []string{
+		"Dai-kichi",
+		"Kichi",
+		"Chu-kichi",
+		"Shou-kichi",
+		"Sue-kichi",
+		"Kyou",
+		"Shou-kyou",
+		"Dai-kyou",
+	}
+
+	shuffle(fortunes)
+	fmt.Println(fortunes[0])
+
+	return nil
 }
