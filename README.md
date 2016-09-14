@@ -1,6 +1,6 @@
-# What is this
+# Monoslidegenic
 
-Monoslidegenic is a slide generator just only pass one markdown file.
+This is a slide generator just only pass one markdown file.
 
 ## Features
 
@@ -21,7 +21,7 @@ And open only it by your browser.
 ```
 $ monoslidegenic ./YOUR_FILE.md
 $ ls
-YOUR_FILE.html
+YOUR_FILE.md YOUR_FILE.html
 $ open ./YOUR_FILE.html
 ```
 Name the slide by yourself, too.
